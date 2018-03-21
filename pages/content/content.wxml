@@ -1,0 +1,14 @@
+<!--内容部分公共模板  -->
+<template name="contentItem">
+  <view class="c_top">
+
+    <image class="avator" mode="aspectFit" src="../../assets/img/tabBar_essence_icon.png"></image>
+
+    <view class="name_time">
+        <text>李明</text>
+        <text>2017-12-03 18:26:28</text>
+    </view>
+
+    <text class="more icon-gengduo"></text>
+  </view>
+</template>

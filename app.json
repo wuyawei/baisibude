@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/new/new",
+    "pages/love/love",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43d3d",
+    "navigationBarTitleText": "百思不得",
+    "navigationBarTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "rgb(176,170,168)",
+    "borderStyle": "#d43d3d",
+    "selectedColor": "black",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "精华",
+        "selectedIconPath": "assets/img/tabBar_essence_click_icon.png",
+        "iconPath": "assets/img/tabBar_essence_icon.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "最新",
+        "selectedIconPath": "assets/img/tabBar_new_click_icon.png",
+        "iconPath": "assets/img/tabBar_new_icon.png"
+      },
+      {
+        "pagePath": "pages/love/love",
+        "text": "关注",
+        "selectedIconPath": "assets/img/tabBar_friendTrends_click_icon.png",
+        "iconPath": "assets/img/tabBar_friendTrends_icon.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "selectedIconPath": "assets/img/tabBar_me_click_icon.png",
+        "iconPath": "assets/img/tabBar_me_icon.png"
+      }
+    ]
+  }
+}
