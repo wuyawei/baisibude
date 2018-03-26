@@ -1,0 +1,87 @@
+.contentbox{
+  background-color: #fff;
+  margin: 12rpx 12rpx 10rpx 12rpx;
+  border: 1rpx solid #dddcdc;
+}
+.avator{
+  display: inline-block;
+  vertical-align: middle;
+  width:56rpx;
+  height: 56rpx;
+  margin-left: 14rpx;
+  margin-top: 14rpx;
+}
+.name_time{
+  display: inline-block;
+  margin-left: 14rpx;
+  margin-top: 12rpx;
+  vertical-align: middle;
+  padding: 0;
+  color: #454545;
+}
+.name_time .time{
+  display: block;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.name_time .date{
+  display: block;
+  font-size: 15rpx;
+}
+.more{
+  float: right;
+  margin-top: 14rpx;
+  margin-right: 14rpx;
+  height: 60rpx;
+  width: 60rpx;
+  text-align: center;
+}
+.c_main{
+  margin: 20rpx 14rpx;
+}
+.content-title{
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+.content-cont{
+  text-align:center;
+  margin:0 auto;
+  overflow: hidden;
+}
+.content-cont image{
+  display: inline-block;
+  max-width:100%;
+}
+.content-cont video{
+  display: inline-block;
+  max-width:100%;
+  min-width: 70%;
+}
+.content-cont audio{
+  display: inline-block;
+  width:100%;
+}
+.c_bottom{
+  height: 85rpx;
+  border-top: 1rpx solid #f8f7f7;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.c_bottom .btn{
+  width: 25%;
+  line-height: 85rpx;
+  text-align: center;
+  border-right: 1px solid #dddcdc;
+}
+.c_bottom .btn:last-child{
+  border-right: none;
+}
+.btn .iconfont{
+  color: #999;
+}
+.btn .icontext{
+  font-size: 24rpx;
+  color: #737373;
+  margin-left: 10rpx;
+}

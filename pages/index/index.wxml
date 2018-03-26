@@ -1,3 +1,6 @@
 <import src="../content/content.wxml" />  
 
+<view class="tabList">
+  <view wx:for="{{tabItems}}" wx:for-index="i" wx:key="i" class="{{true ? 'active' : ''}}">{{item}}</view>
+</view>
 <template is="contentItem"/>

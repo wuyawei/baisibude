@@ -1,0 +1,10 @@
+@import '../content/content.wxss';
+
+.tabList{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 28rpx;
+}
+.tabList .active{
+  color: #d43d3d;
+}

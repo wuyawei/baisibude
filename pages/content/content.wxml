@@ -1,14 +1,57 @@
 <!--内容部分公共模板  -->
 <template name="contentItem">
-  <view class="c_top">
+  <view class="contentbox">
 
-    <image class="avator" mode="aspectFit" src="../../assets/img/tabBar_essence_icon.png"></image>
+    <!-- 内容顶部 -->
+    <view class="c_top">
+      <image class="avator" mode="aspectFit" src="../../assets/img/tabBar_essence_icon.png"></image>
 
-    <view class="name_time">
-        <text>李明</text>
-        <text>2017-12-03 18:26:28</text>
+      <view class="name_time">
+          <text class="time">李明</text>
+          <text class="date">2017-12-03 18:26:28</text>
+      </view>
+      <text class="more icon-gengduo1 iconfont"></text>
     </view>
 
-    <text class="more icon-gengduo"></text>
+    <!-- 内容 -->
+    <view class="c_main">
+      <text class="content-title">有哪些颜值爆表的零食！</text>
+
+      <!-- 图片  -->
+      <view class="content-cont" hidden="{{false}}" >
+          <image src="" mode="scaleToFill" style=""></image>
+      </view>
+
+      <!--视频-->
+      <view class="content-cont" hidden="{{true}}">
+          <video id="" src="" bindplay="videoPlay" bindended="videoEndPlay" catchtap="tapVideo" controls style="" ></video>
+      </view>
+
+      <!--音频-->
+      <view class="content-cont" hidden="{{true}}">
+          <audio id="" src="" poster="" author="" bindplay="audioplay" bindended="audioEndPlay" controls></audio>
+      </view>
+    </view>
+
+    <!-- 内容底部 -->
+    <view class="c_bottom">
+
+      <view class="btn">
+        <text class="iconfont icon-dianzan1"></text>
+        <text class="icontext">66</text>
+      </view>
+      <view class="btn">
+        <text class="iconfont icon-z-nolikeFill"></text>
+        <text class="icontext">66</text>
+      </view>
+      <view class="btn">
+        <text class="iconfont icon-zhuanfa1"></text>
+        <text class="icontext">66</text>
+      </view>
+      <view class="btn">
+        <text class="iconfont icon-gengduo"></text>
+      </view>
+
+    </view>
   </view>
 </template>
