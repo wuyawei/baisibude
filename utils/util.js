@@ -1,3 +1,23 @@
+
+let baseUrl="http://api.budejie.com/api/api_open.php";
+
+const request = (params = {}, method = "GET", header = {}) => {
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url: baseUrl,
+      data: params,
+      method: method,
+      header: header ? header : "application/json",
+      success(res) {
+        resolve(res)
+      },
+      fail(res) {
+        reject(res)
+      }
+    })
+  })
+}
+
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -15,5 +35,6 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  request
 }

@@ -1,6 +1,11 @@
 <import src="../content/content.wxml" />  
 
 <view class="tabList">
-  <view wx:for="{{tabItems}}" wx:for-index="i" wx:key="i" class="{{true ? 'active' : ''}}">{{item}}</view>
+  <view wx:for="{{tabItems}}" wx:for-index="i" wx:key="i" class="{{currTab == i ? 'active' : ''}}" bindtap="setcurrTab" data-i="{{i}}">{{item}}</view>
 </view>
-<template is="contentItem"/>
+
+<block wx:for="{{allDataList}}" wx:key="item.id">
+  <navigator url="detail?id={{item.id}}">
+    <template is="contentItem" data="{{item}}"/>
+  </navigator>
+</block>

@@ -4,32 +4,32 @@
 
     <!-- 内容顶部 -->
     <view class="c_top">
-      <image class="avator" mode="aspectFit" src="../../assets/img/tabBar_essence_icon.png"></image>
+      <image class="avator" mode="aspectFit" src="{{item.profile_image}}"></image>
 
       <view class="name_time">
-          <text class="time">李明</text>
-          <text class="date">2017-12-03 18:26:28</text>
+          <text class="time">{{item.name}}</text>
+          <text class="date">{{item.create_time}}</text>
       </view>
       <text class="more icon-gengduo1 iconfont"></text>
     </view>
 
     <!-- 内容 -->
     <view class="c_main">
-      <text class="content-title">有哪些颜值爆表的零食！</text>
+      <text class="content-title">{{item.text}}</text>
 
       <!-- 图片  -->
-      <view class="content-cont" hidden="{{false}}" >
-          <image src="" mode="scaleToFill" style=""></image>
+      <view class="content-cont" hidden="{{(item.image1 && (!item.videouri && !item.voiceuri))  ? false : true}}" >
+          <image src="{{item.image1}}" mode="scaleToFill" style=""></image>
       </view>
 
       <!--视频-->
-      <view class="content-cont" hidden="{{true}}">
-          <video id="" src="" bindplay="videoPlay" bindended="videoEndPlay" catchtap="tapVideo" controls style="" ></video>
+      <view class="content-cont" hidden="{{item.videouri ? false : true}}">
+          <video id="" src="{{item.videouri}}" bindplay="videoPlay" bindended="videoEndPlay" catchtap="tapVideo" controls style="" ></video>
       </view>
 
       <!--音频-->
-      <view class="content-cont" hidden="{{true}}">
-          <audio id="" src="" poster="" author="" bindplay="audioplay" bindended="audioEndPlay" controls></audio>
+      <view class="content-cont" hidden="{{item.voiceuri ? false : true}}">
+          <audio id="" src="{{item.voiceuri}}" poster="{{item.bimageuri}}" author="" bindplay="audioplay" bindended="audioEndPlay" controls></audio>
       </view>
     </view>
 
