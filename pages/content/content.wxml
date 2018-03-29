@@ -19,12 +19,12 @@
 
       <!-- 图片  -->
       <view class="content-cont" hidden="{{(item.image1 && (!item.videouri && !item.voiceuri))  ? false : true}}" >
-          <image src="{{item.image1}}" mode="scaleToFill" style=""></image>
+          <image src="{{item.image1}}" mode="scaleToFill" style="width:{{item.width}}rpx;height:{{item.height}}rpx;"></image>
       </view>
 
       <!--视频-->
       <view class="content-cont" hidden="{{item.videouri ? false : true}}">
-          <video id="" src="{{item.videouri}}" bindplay="videoPlay" bindended="videoEndPlay" catchtap="tapVideo" controls style="" ></video>
+          <video id="" src="{{item.videouri}}" bindplay="videoPlay" bindended="videoEndPlay" catchtap="tapVideo" controls style="width:{{item.width}}rpx;height:{{item.height}}rpx;" ></video>
       </view>
 
       <!--音频-->

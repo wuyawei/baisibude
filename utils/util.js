@@ -1,5 +1,5 @@
 
-let baseUrl="http://api.budejie.com/api/api_open.php";
+let baseUrl="https://api.budejie.com/api/api_open.php";
 
 const request = (params = {}, method = "GET", header = {}) => {
   return new Promise((resolve, reject) => {
