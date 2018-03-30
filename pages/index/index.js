@@ -66,7 +66,10 @@ Page({
       wx.hideLoading()
     })
   },
-
+  //上拉触底
+  onReachBottomDistance() {
+    this.getmoreData()
+  },
   /*
    * 生命周期函数--监听页面显示
    */

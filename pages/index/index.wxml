@@ -3,8 +3,8 @@
 <view class="tabList">
   <view wx:for="{{tabItems}}" wx:for-index="i" wx:key="i" class="{{currTab == i ? 'active' : ''}}" bindtap="setcurrTab" data-i="{{i}}">{{item}}</view>
 </view>
-<scroll-view  bindscrolltolower="getmoreData" class="scrollnav" style="height:{{swiperHeight}}px" scroll-y="{{true}}">
-  <view wx:for="{{allDataList}}" wx:key="item.id">
+<view class="scrollnav" style="height:{{swiperHeight}}px" scroll-y="{{true}}">
+  <block wx:for="{{allDataList}}" wx:key="item.id">
     <template is="contentItem" data="{{item}}"/>
-  </view>
-</scroll-view>
+  </block>
+</view>
